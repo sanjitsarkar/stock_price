@@ -20,8 +20,8 @@ h1 {
 
 form {
   border-radius: 5px;
-  width: 30rem;
-  padding: 2rem 4rem;
+  max-width: 25rem;
+  padding: 2rem 3rem;
   margin: auto;
   background: white;
   -webkit-box-shadow: 0 0 1rem rgba(0, 0, 0, 0.383);
@@ -37,6 +37,13 @@ form {
       -ms-flex-align: start;
           align-items: flex-start;
   gap: 1rem;
+}
+
+@media screen and (max-width: 400px) {
+  form {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
 }
 
 form button,
@@ -65,13 +72,9 @@ form p {
 }
 
 footer#footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
   padding: 1rem;
   background: white;
-  margin-top: 3rem;
+  margin-top: 25vh;
 }
 
 footer#footer .title_secondary {
