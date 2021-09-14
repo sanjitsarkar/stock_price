@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
+import { Footer } from "./Footer";
 
 function App() {
   const [initialPrice, setInitialPrice] = useState();
@@ -64,6 +65,7 @@ function App() {
         <button type="submit">Calculate</button>
         <p>{output}</p>
       </form>
+      <Footer />
     </div>
   );
 }
