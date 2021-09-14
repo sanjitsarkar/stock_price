@@ -40,6 +40,7 @@ function App() {
       >
         <input
           type="number"
+          min="1"
           value={initialPrice}
           placeholder="Enter initial price"
           onChange={(e) => {
@@ -47,6 +48,7 @@ function App() {
           }}
         />
         <input
+          min="1"
           type="number"
           placeholder="Enter the number of stocks bought"
           value={numOfStocks}
@@ -55,6 +57,7 @@ function App() {
           }}
         />
         <input
+          min="1"
           type="num"
           value={currentPrice}
           placeholder="Enter the current price of the stocks"
